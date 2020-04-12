@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+.navbar{
+    padding: 0.8rem;
+}
 
 
 
-
-
-
-
-
-
+img{
+    width: 100%;
+}
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
@@ -46,7 +53,7 @@ figure {
   height: 100%;
 }
 #fixed {
-  background-image: url('img/mac.png');
+  background-image: url('../img/mac.png');
   position: fixed;
   display: block;
   top: 0;
