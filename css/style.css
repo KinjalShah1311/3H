@@ -7,6 +7,72 @@ html, body{
     color: #222;
 }
 
+/*TOP NAVIGATION*/
+
+#top {
+  background: #555;
+  padding: 10px 0;
+}
+
+#top .offer {
+  color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  #top {
+    font-size: 0.738rem;
+    text-align: center;
+  }
+}
+
+#top a {
+  color: #fff;
+}
+
+#top ul.menu {
+  padding-top: 5px;
+  margin: 0;
+  font-size: 0.738rem;
+}
+
+#top ul.menu > li {
+  margin-right: 0;
+}
+
+#top ul.menu > li a {
+  color: #eee;
+}
+
+#top ul.menu > li + li:before {
+  content: "|\00a0";
+  padding: 0 5px;
+  color: #f8f9fa;
+}
+
+#top ul.menu > .active {
+  color: #999;
+}
+
+#top #login-modal .modal-header {
+  background: #4fbfa8;
+}
+
+#top #login-modal .modal-header h5 {
+  color: #fff;
+}
+
+#top #login-modal a {
+  color: #4fbfa8;
+}
+
+#top #login-modal p {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/*END TOP NAVIGAION*/
+
+
 .navbar {
     padding: 0.8rem;
 }
