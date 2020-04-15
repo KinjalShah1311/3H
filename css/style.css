@@ -1,3 +1,10 @@
+/*
+//$theme-color: #4fbfa8;
+//$white: #fff;
+Green shade : #509F71
+Orange Shade: #BF9C45
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 html, body{
@@ -7,7 +14,20 @@ html, body{
     color: #222;
 }
 
+
+.btn-primary{
+    background-color: #4fbfa8;
+    border: 1px solid #4fbfa8;
+}
+
+.btn-primary:hover{
+    background-color: #37A58F;
+    border: 1px solid #37A58F;
+}
+
+/*=================*/
 /*TOP NAVIGATION*/
+/*=================*/
 
 #top {
   background: #555;
@@ -16,13 +36,6 @@ html, body{
 
 #top .offer {
   color: #fff;
-}
-
-@media (max-width: 991.98px) {
-  #top {
-    font-size: 0.738rem;
-    text-align: center;
-  }
 }
 
 #top a {
@@ -70,19 +83,44 @@ html, body{
   margin-bottom: 20px;
 }
 
-/*END TOP NAVIGAION*/
-
+/*=================*/
+/*MAIN NAVIGATION*/
+/*=================*/
 
 .navbar {
     padding: 0.8rem;
 }
 
-.navbar-nav li {
-    padding-right: 18px;
-}
 nav-link {
     font-size: 1em;
 }
+
+.navbar .navbar-nav > .nav-item > .nav-link {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  padding: 20px 15px !important;
+  color: #555;
+}
+
+.navbar .navbar-nav > .nav-item > .nav-link.active,
+.navbar .navbar-nav > .nav-item > .nav-link:hover,
+.navbar .navbar-nav > .nav-item > .nav-link:focus {
+    background: #4fbfa8;
+    padding: 20px 15px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: #555;
+}
+
+.navbar-brand img{
+  height: 50px;
+}
+
+/*=================*/
+/*CAROUSEL*/
+/*=================*/
 
 .carousel-inner img {
     width: 100%;
@@ -105,15 +143,10 @@ nav-link {
 /*    padding-bottom: 1em;*/
 }
 
-.btn-primary{
-    background-color: #6648b1;
-    border: 1px solid #6648b1;
-}
 
-.btn-primary:hover{
-    background-color: #563d7c;
-    border: 1px solid #563d7c;
-}
+/*=================*/
+/*JUMBOTRON*/
+/*=================*/
 
 .jumbotron{
     padding: 1em;
@@ -123,25 +156,47 @@ nav-link {
     padding-bottom: 2em;
 }
 
-.welcome{
+/*=================*/
+/*IDEA*/
+/*=================*/
+
+.idea{
     width: 75%;
     margin: 0 auto;
     padding-top: 2em;
 }
 
-.welcome hr{
+.idea hr{
     border-top: 2px solid #b4b4b4;
     width: 90%;
     margin: 1em;
 }
 
-.fa-code{
+/*=================*/
+/*Three Column Icon*/
+/*=================*/
+
+.fa-street-view{
     color: #e54d26;
     font-size: 4em;
     margin: 1em;
 }
+.fa-hands-helping{
+    color: #509F71;
+    font-size: 4em;
+    margin: 1em;
+}
+.fa-city{
+    color: #BF9C45;
+    font-size: 4em;
+    margin: 1em;
+}
 
-.fun{
+/*=================*/
+/*Know More*/
+/*=================*/
+
+.more{
     width: 100%;
     margin-bottom: 2em;
 }
@@ -199,6 +254,21 @@ hr.light-100{
 @media (max-width: 992px) {
     .social a{
         font-size: 2em;
+    }
+
+     #top {
+        font-size: 0.738rem;
+        text-align: center;
+     }
+
+    .navbar .navbar-nav > .nav-item > .nav-link {
+        padding: 10px 15px !important;
+    }
+
+    .navbar .navbar-nav > .nav-item > .nav-link.active,
+    .navbar .navbar-nav > .nav-item > .nav-link:hover,
+    .navbar .navbar-nav > .nav-item > .nav-link:focus {
+        padding: 10px 15px !important;
     }
 }
 @media (max-width: 768px) {
