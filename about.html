@@ -15,52 +15,6 @@
 
 
 
-<!--Top Navigation-->
-    <div id = "top">
-         <div class="container">
-          <div class="row">
-            <div class="col-lg-6"></div>
-            <div class="col-lg-6 text-center text-lg-right">
-              <ul class="menu list-inline mb-0">
-                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                <li class="list-inline-item"><a href="register.html">Register</a></li>
-                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </div>
-
-<!-- Navigation -->
-      <div class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img  src="img/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class = "navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="service.html">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Connect</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
     <div id="headerID"></div>
 
   <!--<div class="container1">
@@ -177,23 +131,12 @@
     </div>
 </div>
 
-<!--- Connect -->
-<div class="container-fluid padding">
- <div class="row text-center padding">
-    <div class="col-12">
-        <h2>Connect</h2>
-    </div>
-    <div class="col-12 social padding">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-    </div>
- </div>
-</div>
+<div id="footerID"> footer  </div>
 
 <script>
+      $("#headerID").load("header.html");
+      $("#footerID").load("footer.html");
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -210,39 +153,9 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
+
+
 </body>
 
-<!--- Footer -->
-
-    <footer>
-        <div class="container-fluid padding">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <img src="img/logo.png">
-                    <hr class="light">
-                    <p>555-555-5555</p>
-                    <p>Conestoga College</p>
-                    <p>Doon Campus</p>
-                    <p>Kitchener, ON, CA, N2E1R7</p>
-                </div>
-                <div class="col-md-4">
-                    <h1>aaaa</h1>
-                    <hr class="light">
-                    <p>k@k.com</p>
-
-                </div>
-                <div class="col-md-4">
-                    <h1>aaaa</h1>
-                    <hr class="light">
-                    <p>k@k.com</p>
-
-                </div>
-                <div class="col-12">
-                    <hr class="hr.light-100">
-                    <h5>&copy; h3-HelpHungerHunt.com</h5>
-                </div>
-            </div>
-        </div>
-    </footer>
 
 </html>
