@@ -1,93 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html" charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Help Hunger Hunt">
+    <meta name="keywords" content="food hunger, volunteer, charity, food waste">
+
 	<title>HelpHungerHunt</title>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-
-
-<!--Top Navigation-->
-    <div id = "top">
-         <div class="container">
-          <div class="row">
-            <div class="col-lg-6 mb-3 mb-lg-0"><a href="donate.html" class="btn btn-success btn-sm">Covid 19 Pandemic</a><a href="#">Support us</a></div>
-            <div class="col-lg-6 text-center text-lg-right">
-              <ul class="menu list-inline mb-0">
-                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                <li class="list-inline-item"><a href="register.html">Register</a></li>
-                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-         <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
-          <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Login</h5>
-                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
-              </div>
-              <div class="modal-body">
-                <form action="customer-orders.html" method="post">
-                  <div class="form-group">
-                    <input id="email-modal" type="text" placeholder="email" class="form-control">
-                  </div>
-                  <div class="form-group">
-                    <input id="password-modal" type="password" placeholder="password" class="form-control">
-                  </div>
-                  <p class="text-center">
-                    <button class="btn btn-primary"><i class="fas fa-sign-in"></i> Log in</button>
-                  </p>
-                </form>
-                <p class="text-center text-muted">Not registered yet?</p>
-                <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
+    <header role="heading">
+    <!--Top Navigation-->
+        <div id = "top">
+             <div class="container">
+              <div class="row">
+                <div class="col-lg-6 mb-3 mb-lg-0"><a href="donate.html" class="btn btn-success btn-sm">Covid 19 Pandemic</a><a href="#">Support us</a></div>
+                <div class="col-lg-6 text-center text-lg-right">
+                  <ul class="menu list-inline mb-0">
+                    <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                    <li class="list-inline-item"><a href="register.html">Register</a></li>
+                    <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
+             <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="customer-orders.html" method="post">
+                      <div class="form-group">
+                        <input id="email-modal" type="text" placeholder="email" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <input id="password-modal" type="password" placeholder="password" class="form-control">
+                      </div>
+                      <p class="text-center">
+                        <button class="btn btn-primary"><i class="fas fa-sign-in"></i> Log in</button>
+                      </p>
+                    </form>
+                    <p class="text-center text-muted">Not registered yet?</p>
+                    <p class="text-center text-muted"><a href="#"><strong>Register now</strong></a>! Help others and feel good!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
         </div>
-    </div>
+    </header>
 
-<!-- Navigation -->
-      <div class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img  src="img/logo.jpg" alt="H3"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav role="navigation">
+    <!-- Navigation -->
+        <div class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img  src="img/logo.jpg" alt="H3"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class = "navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">About Us</a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="partners.html">Our Partners</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="service.html">Our News & Events</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="donate.html">Donate</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class = "navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">About Us</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="partners.html">Our Partners</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="service.html">Our News & Events</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donate.html">Donate</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-
+    </nav>
 
 </body>
 </html>
