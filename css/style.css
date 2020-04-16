@@ -473,7 +473,103 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
 
+/*=================*/
+/*Dilpreet*/
+/*=================*/
 
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+
+#fixed-wrapS {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#fixedS {
+  background-image: url('../img/p6.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.heading {
+              position: relative;
+              text-align: center;
+              color: white;
+              font-weight: bold;
+              font-size: 50px;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+
+}
+
+#fixed-wrapA {
+                  clip: rect(0, auto, auto, 0);
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+}
+
+#fixedA {
+              background-image: url('../img/p7.jpg');
+              position: fixed;
+              display: block;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-size: cover;
+              background-position: center center;
+              -webkit-transform: translateZ(0);
+                      transform: translateZ(0);
+              will-change: transform;
+}
+
+#background_color {
+                     background-color: lightgrey;
+}
+
+.collapsible {
+                  background-color: #777;
+                  color: white;
+                  cursor: pointer;
+                  padding: 18px;
+                  width: 33%;
+                  border: none;
+                  text-align: left;
+                  outline: none;
+                  font-size: 15px;
+}
+
+.collapsible:hover {
+                        background-color: darkgrey;
+}
+
+.content {
+              padding: 0 18px;
+              display: none;
+              overflow: hidden;
+              background-color: #f1f1f1;
+}
 
 
 
