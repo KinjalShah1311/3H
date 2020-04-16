@@ -133,7 +133,7 @@ nav-link {
     width: 100%;
 }
 .carousel-caption {
- background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 /*to center item*/
@@ -141,6 +141,7 @@ nav-link {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    display: grid;
 }
 
 .carousel-caption h1{
