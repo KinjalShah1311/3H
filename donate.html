@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <title>HelpHungerHunt</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Google fonts - Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Leaflet CSS - For the map-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.png">
+
+</head>
+
+<body>
+
+    <div id="headerID"></div>
+
+    <hr class="my-4">
+
+    <!-- Main -->
+
+    <!--- Fixed background -->
+    <figure>
+        <div class="fixed-wrapd">
+            <div id="fixedd"></div>
+        </div>
+    </figure>
+
+    <h1 class="center">Join Our Community of Rise Against Hunger Allies</h1>
+
+    <h3 class="center padding">Monthly supporters not only meet the daily needs of the individuals we provide with meals
+        but
+        with the assistance needed for sustainable development programs which change the fabric and futures of
+        communities all over the world.
+    </h3>
+
+    <div class="card-group padding">
+        <div class="card card-case">
+            <img src="img/money.png" class="card-img" alt="Donate Now">
+            <div class="card-body">
+                <h4 class="align">Donate Now</h4>
+                <p class="align"> Take action by making donation for childer</p>
+                <button type="button" class="btn btn-primary center">Make A One-Time Donation</button>
+            </div>
+        </div>
+        <div class="card card-case">
+            <img src="img/calendar.png" class="card-img" alt="Donate Monthly">
+            <div class="card-body">
+                <h4 class="align">Donate Monthly</h4>
+                <p class="align"> Donate for hungry children on a monthly basis</p>
+                <button type="button" class="btn btn-primary center">Give Monthly</button>
+            </div>
+        </div>
+        <div class="card card-case">
+            <img src="img/backpack.png" class="card-img" alt="Give Scholership">
+            <div class="card-body">
+                <h4 class="align">Donate a Scholarship</h4>
+                <p class="align"> Support high school and university students</p>
+
+                <button type="button" class="btn btn-primary center">Provide a Scholarship</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="padding">
+        <h1 class="center"> Our top donation </h1>
+        <!-- Start of a Table -->
+        <table id="T1">
+            <thead>
+                <tr>
+                    <th>Donators</th>
+                    <th> $$$$$ </th>
+                    <th>Year</th>
+                    <th>Children got Scholarship</th>
+                    <th>Children we fed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>RELIANCE</td>
+                    <td>1.25 Million</td>
+                    <td>2015</td>
+                    <td>426</td>
+                    <td>1256</td>
+                </tr>
+                <tr>
+                    <td>GEICO</td>
+                    <td>1.05 Million</td>
+                    <td>2017</td>
+                    <td>375</td>
+                    <td>1150</td>
+                </tr>
+                <tr>
+                    <td>Anonymous</td>
+                    <td>0.85 Million</td>
+                    <td>2019</td>
+                    <td>350</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>J. K. McIntyre</td>
+                    <td>0.79 Million</td>
+                    <td>2016</td>
+                    <td>265</td>
+                    <td>890</td>
+                </tr>
+                <tr>
+                    <td>Mr. McKenzie</td>
+                    <td>0.60 Million</td>
+                    <td>2020</td>
+                    <td>260</td>
+                    <td>805</td>
+                </tr>
+                <tr>
+                    <td>Wal-Str3et</td>
+                    <td>0.50 Million </td>
+                    <td>2019</td>
+                    <td>250</td>
+                    <td>760</td>
+                </tr>
+                <tr>
+                    <td>Appl3</td>
+                    <td>0.50 Million</td>
+                    <td>2018</td>
+                    <td>268</td>
+                    <td>709</td>
+                </tr>
+                <tr>
+                    <td>Pollos</td>
+                    <td>0.28 Million</td>
+                    <td>2017</td>
+                    <td>240</td>
+                    <td>700</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- end of table -->
+
+    <!-- End of main -->
+
+   <div id="footerID"> footer  </div>
+
+    <script>
+          $("#headerID").load("header.html");
+          $("#footerID").load("footer.html");
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -599,6 +599,183 @@ Extra (xl) large devices (large desktops, 1200px and up)
               background-color: #f1f1f1;
 }
 
+/* ********* */
+/* Darsh CSS */
+/* ***********/
+
+#donate {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.thanks{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    height: 530px;
+    width: 1200px;
+}
+
+.card-img{
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+.align{
+    text-align: center;
+}
+
+.padding{
+    padding-bottom: 2em;
+}
+.card-case{
+    margin: 2em;
+}
+table {
+    width: 95%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px grey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+
+}
+
+th {
+    background: #333;
+    color: white;
+    font-weight: bold;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+    background: #CAE7E1;
+}
+
+tr:nth-of-type(even) {
+    background: #84C8BA;
+}
+
+td,
+th {
+    padding: 6px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+/* ********* */
+/* ** Endof **/
+/* Darsh CSS */
+/* ***********/
+
+/* Fixed image for donate page */
+.fixed-wrapd {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#fixedd {
+    background-image: url('../img/donate.JPG');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+
+}
+
+/* Add This in [media query max-width:768px] */
+/* table css */
+table,
+thead,
+tbody,
+th,
+td,
+tr {
+    display: block;
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+tr {
+    border: 1px solid #333;
+}
+
+td {
+    /* Behave like a "row" */
+    border: none;
+    border-bottom: 1px solid #777977;
+    position: relative;
+    padding-left: 50%;
+}
+
+td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+/* Label the data */
+#T1 td:nth-of-type(1):before {
+    content: 'Donators';
+}
+
+#T1 td:nth-of-type(2):before {
+    content: "$$$$$";
+}
+
+#T1 td:nth-of-type(3):before {
+    content: "Year";
+}
+
+#T1 td:nth-of-type(4):before {
+    content: "Children we fed";
+}
+
+#T1 td:nth-of-type(5):before {
+    content: "Children got Scholarship";
+}
+/* end of table css */
+
 
 
 
