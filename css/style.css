@@ -1,17 +1,4 @@
 @charset "UTF-8";
-/*
-//$theme-color: #225b5b;
-//$white: #fff;
-Green shade : #509F71
-Orange Shade: #BF9C45
-*/
-/*
-dark-gray : #555
-white:
-theme color: #379392
-font color: #333333;
-body color: #EAF6F6
-*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
 html, body {
   height: 100%;
@@ -44,6 +31,23 @@ a {
 }
 
 .btn-primary:focus, .btn-primary.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(55, 147, 146, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(55, 147, 146, 0.5);
+}
+
+.btn-outline-secondary {
+  color: #fff !important;
+  background-color: #aba8a861 !important;
+  border-color: #aba8a861 !important;
+}
+
+.btn-outline-secondary:hover {
+  color: #fff;
+  background-color: #2d7776;
+  border-color: #296e6d;
+}
+
+.btn-outline-secondary:focus, .btn-outline-secondary.focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(55, 147, 146, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(55, 147, 146, 0.5);
 }
@@ -194,7 +198,7 @@ nav-link {
 /*=================*/
 /*
 .jumbotron{
-    padding: 1em;
+padding: 1em;
 }
 */
 .padding {
@@ -235,6 +239,13 @@ nav-link {
   color: #BF9C45;
   font-size: 5em;
   margin: 0.2em;
+}
+
+/*=================*/
+/*blog*/
+/*=================*/
+.light {
+  opacity: 80%;
 }
 
 /*=================*/
@@ -285,7 +296,7 @@ nav-link {
 }
 
 .ribbon.new .theribbon {
-  background-color: #509F71;
+  background-color: #226262;
   text-shadow: 0px 1px 2px #bbb;
 }
 
@@ -530,7 +541,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 /*Partners*/
 /*=================*/
 #fixedP {
-  background-image: url("../img/p6.jpg");
+  background-image: url("../img/partner.jpg");
   position: fixed;
   display: block;
   top: 0;
@@ -542,6 +553,143 @@ Extra (xl) large devices (large desktops, 1200px and up)
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
+}
+
+.fa-building {
+  color: #e54d26;
+  font-size: 5em;
+  margin: 0.2em;
+}
+
+.fa-briefcase {
+  color: #e54d26;
+  font-size: 5em;
+  margin: 0.2em;
+}
+
+.fa-network-wired {
+  color: #e54d26;
+  font-size: 5em;
+  margin: 0.2em;
+}
+
+.fa-icons {
+  color: #e54d26;
+  font-size: 5em;
+  margin: 0.2em;
+}
+
+.fa-university {
+  color: #e54d26;
+  font-size: 5em;
+  margin: 0.2em;
+}
+
+.fa-church {
+  color: #e54d26;
+  font-size: 5em;
+  margin: 0.2em;
+}
+
+.testimonial {
+  background-color: white;
+  text-align: center;
+  padding: 30px 30px 50px;
+  margin: 100px 15px 160px;
+  position: relative;
+}
+
+.testimonial::before,
+.testimonial::after {
+  content: "";
+  border-top: 40px solid white;
+  border-right: 125px solid transparent;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}
+
+.testimonial::after {
+  border-right: none;
+  border-left: 125px solid transparent;
+  left: auto;
+  right: 0;
+}
+
+.testimonial .icon {
+  display: inline-block;
+  font-size: 80px;
+  color: #016d9b;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.testimonial .description {
+  font-size: 14px;
+  color: #777;
+  text-align: justify;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.testimonial .testimonial-content {
+  width: 100%;
+  left: 0;
+  position: absolute;
+}
+
+.testimonial .pic {
+  display: inline-block;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 4px #016d9b;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.testimonial .pic img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial .name {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+  margin: 10px 0 5px 0;
+}
+
+.testimonial .title {
+  display: block;
+  font-size: 14px;
+  color: #ffd9b8;
+}
+
+.owl-controls {
+  margin-top: 20px;
+}
+
+.owl-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.owl-page {
+  height: 10px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10%;
+}
+
+.owl-page:hover,
+.owl-page.active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.owl-page:not(first-item) {
+  margin-left: 10px;
 }
 
 /*=================*/
@@ -557,7 +705,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #fixedS {
-  background-image: url("../img/p6.jpg");
+  background-image: url("../img/services.jpg");
   position: fixed;
   display: block;
   top: 0;
@@ -592,7 +740,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #fixedA {
-  background-image: url("../img/p7.jpg");
+  background-image: url("../img/blog.jpg");
   position: fixed;
   display: block;
   top: 0;
@@ -611,19 +759,19 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 .collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 33%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
+  /*background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 33%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+  }
 
-.collapsible:hover {
-  background-color: darkgrey;
+      .collapsible:hover {
+      background-color: darkgrey;*/
 }
 
 .content {
