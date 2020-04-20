@@ -10,7 +10,7 @@ $lightGrayColor: #b4b4b4;
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-body{
+html, body{
     overflow-x: hidden;
     height: 100%;
     width: 100%;
@@ -411,11 +411,6 @@ footer button:hover{
     background-color: $lightGrayColor !important;
 }
 
-
-//.flink li a:hover{
-//    color: $lightGrayColor;
-//}
-
 footer .social {
     display: flex;
     flex-direction: row;
@@ -638,7 +633,9 @@ figure {
     height: 60%;
     margin: 0!important;
 }
-#fixed-layer {
+
+
+.fixed-wrap {
     clip: rect(0, auto, auto, 0);
     position: absolute;
     top: 0;
@@ -646,45 +643,7 @@ figure {
     width: 100%;
     height: 100%;
 }
-#fixed-layer-image {
-    background-image: url('../img/slider.jpg');
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    will-change: transform;
-}
-/*--- Bootstrap Padding Fix --*/
-//[class*="col-"] {
-//    padding: 1rem;
-//}
 
-
-
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
 
 /*=================*/
 /*Partners*/
@@ -796,29 +755,21 @@ Extra (xl) large devices (large desktops, 1200px and up)
 /*=================*/
 
 
-#fixed-wrapS {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#fixedS {
-    background-image: url('../img/services.jpg');
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    will-change: transform;
-}
+//
+//#fixedS {
+//    background-image: url('../img/services.jpg');
+//    position: fixed;
+//    display: block;
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+//    background-size: cover;
+//    background-position: center center;
+//    -webkit-transform: translateZ(0);
+//    transform: translateZ(0);
+//    will-change: transform;
+//}
 
 .heading {
     position: relative;
@@ -831,30 +782,30 @@ Extra (xl) large devices (large desktops, 1200px and up)
     transform: translate(-50%, -50%);
 
 }
-
-#fixed-wrapA {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#fixedA {
-    background-image: url('../img/blog.jpg');
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    will-change: transform;
-}
+//
+//#fixed-wrapA {
+//    clip: rect(0, auto, auto, 0);
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+//}
+//
+//#fixedA {
+//    background-image: url('../img/blog.jpg');
+//    position: fixed;
+//    display: block;
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+//    background-size: cover;
+//    background-position: center center;
+//    -webkit-transform: translateZ(0);
+//    transform: translateZ(0);
+//    will-change: transform;
+//}
 
 #background_color {
     background-color: lightgrey;
