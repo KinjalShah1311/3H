@@ -10,7 +10,8 @@ $lightGrayColor: #b4b4b4;
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-html, body{
+body{
+    overflow-x: hidden;
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -93,58 +94,131 @@ a {
 /*TOP NAVIGATION*/
 /*=================*/
 
+//#top {
+//    background: $darkGrayColor;
+//    padding: 10px 0;
+//}
+//
+//#top .offer {
+//    color: $white;
+//}
+//
+//#top a {
+//    color: $white;
+//}
+//
+//#top ul.menu {
+////    padding-top: 5px;
+//    margin: 0;
+//    font-size: 0.738rem;
+//}
+//
+//#top ul.menu > li {
+//    margin-right: 0;
+//}
+//
+//#top ul.menu > li a {
+//    color: #eee;
+//}
+//
+//#top ul.menu > li + li:before {
+//    content: "|\00a0";
+//    padding: 0 5px;
+//    color: #f8f9fa;
+//}
+//
+//#top ul.menu > .active {
+//    color: #999;
+//}
+//
+//#top #login-modal .modal-header {
+//    background: $themeGreenColor;
+//}
+//
+//#top #login-modal .modal-header h5 {
+//    color: $white;
+//}
+//
+//#top #login-modal a {
+//    color: $themeGreenColor;
+//}
+//
+//#top #login-modal p {
+//    font-weight: 300;
+//    margin-bottom: 20px;
+//}
+
+/*
+*
+* ======================================================================
+* TOP BAR
+* ======================================================================
+*
+*/
 #top {
-    background: $darkGrayColor;
-    padding: 10px 0;
+  background: #555;
+  padding: 10px 0;
 }
 
 #top .offer {
-    color: $white;
+  color: #fff;
+}
+
+#top .offer .btn {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 991.98px) {
+  #top {
+    font-size: 0.738rem;
+    text-align: center;
+  }
 }
 
 #top a {
-    color: $white;
+  color: #fff;
 }
 
 #top ul.menu {
-    padding-top: 5px;
-    margin: 0;
-    font-size: 0.738rem;
+  padding-top: 5px;
+  margin: 0;
+  font-size: 0.738rem;
 }
 
 #top ul.menu > li {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 #top ul.menu > li a {
-    color: #eee;
+  color: #eee;
 }
 
 #top ul.menu > li + li:before {
-    content: "|\00a0";
-    padding: 0 5px;
-    color: #f8f9fa;
+  content: "|\00a0";
+  padding: 0 5px;
+  color: #f8f9fa;
 }
 
 #top ul.menu > .active {
-    color: #999;
+  color: #999;
 }
 
 #top #login-modal .modal-header {
-    background: $themeGreenColor;
+  background: #4fbfa8;
 }
 
 #top #login-modal .modal-header h5 {
-    color: $white;
+  color: #fff;
 }
 
 #top #login-modal a {
-    color: $themeGreenColor;
+  color: #4fbfa8;
 }
 
 #top #login-modal p {
-    font-weight: 300;
-    margin-bottom: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
 /*=================*/
@@ -600,9 +674,9 @@ figure {
     will-change: transform;
 }
 /*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
-}
+//[class*="col-"] {
+//    padding: 1rem;
+//}
 
 
 

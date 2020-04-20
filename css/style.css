@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
-html, body {
+body {
+  overflow-x: hidden;
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -82,8 +83,15 @@ a {
 /*=================*/
 /*TOP NAVIGATION*/
 /*=================*/
+/*
+*
+* ======================================================================
+* TOP BAR
+* ======================================================================
+*
+*/
 #top {
-  background: #525252;
+  background: #555;
   padding: 10px 0;
 }
 
@@ -91,6 +99,17 @@ a {
   color: #fff;
 }
 
+#top .offer .btn {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 991.98px) {
+  #top {
+    font-size: 0.738rem;
+    text-align: center;
+  }
+}
 #top a {
   color: #fff;
 }
@@ -120,7 +139,7 @@ a {
 }
 
 #top #login-modal .modal-header {
-  background: #226262;
+  background: #4fbfa8;
 }
 
 #top #login-modal .modal-header h5 {
@@ -128,7 +147,7 @@ a {
 }
 
 #top #login-modal a {
-  color: #226262;
+  color: #4fbfa8;
 }
 
 #top #login-modal p {
@@ -588,10 +607,6 @@ figure {
 }
 
 /*--- Bootstrap Padding Fix --*/
-[class*=col-] {
-  padding: 1rem;
-}
-
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
