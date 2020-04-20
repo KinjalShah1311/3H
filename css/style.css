@@ -222,7 +222,12 @@ nav-link {
 /*=================*/
 /*JUMBOTRON*/
 /*=================*/
+#info {
+  margin-bottom: 30px;
+}
+
 .box {
+  padding: 1em;
   background: #E3F3F3;
   border: solid 1px #e6e6e6;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
@@ -237,6 +242,10 @@ nav-link {
 /*=================*/
 /*IDEA*/
 /*=================*/
+#idea {
+  margin-bottom: 30px;
+}
+
 .idea {
   width: 75%;
   margin: 0 auto;
@@ -271,8 +280,24 @@ nav-link {
 }
 
 /*=================*/
+/*services*/
+/*=================*/
+#services-section {
+  margin-bottom: 30px;
+}
+
+/*=================*/
 /*blog*/
 /*=================*/
+#blog-section {
+  margin-bottom: 30px;
+}
+
+#blog-section hr {
+  border-top: 2px solid #b4b4b4;
+  margin: 1em;
+}
+
 .light {
   opacity: 80%;
 }
@@ -470,6 +495,20 @@ hr.light-100 {
     display: none;
   }
 
+  .lead {
+    font-size: 1rem;
+  }
+
+  .idea {
+    width: 100%;
+  }
+
+  .idea hr {
+    border-top: 2px solid #b4b4b4;
+    width: 100%;
+    margin: 1em;
+  }
+
   /* table css */
   table,
 thead,
@@ -539,6 +578,10 @@ tr {
     display: none;
   }
 
+  .lead {
+    font-size: 1rem;
+  }
+
   .carousel-caption {
     display: none;
   }
@@ -572,7 +615,7 @@ figure {
   margin: 0 !important;
 }
 
-.fixed-wrap {
+#fixed-layer {
   clip: rect(0, auto, auto, 0);
   position: absolute;
   top: 0;
@@ -581,7 +624,7 @@ figure {
   height: 100%;
 }
 
-#fixed {
+#fixed-layer-image {
   background-image: url("../img/slider.jpg");
   position: fixed;
   display: block;
