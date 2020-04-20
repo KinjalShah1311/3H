@@ -72,11 +72,13 @@ a {
 
 .box{
     background: #E3F3F3;
-    margin: 30px;
+    margin: 1em;
     border: solid 1px #e6e6e6;
-    padding: 20px;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+
 }
 
 /*=================*/
@@ -156,69 +158,69 @@ a {
 *
 */
 #top {
-  background: #555;
-  padding: 10px 0;
+    background: #555;
+    padding: 10px 0;
 }
 
 #top .offer {
-  color: #fff;
+    color: #fff;
 }
 
 #top .offer .btn {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 @media (max-width: 991.98px) {
-  #top {
-    font-size: 0.738rem;
-    text-align: center;
-  }
+    #top {
+        font-size: 0.738rem;
+        text-align: center;
+    }
 }
 
 #top a {
-  color: #fff;
+    color: #fff;
 }
 
 #top ul.menu {
-  padding-top: 5px;
-  margin: 0;
-  font-size: 0.738rem;
+    padding-top: 5px;
+    margin: 0;
+    font-size: 0.738rem;
 }
 
 #top ul.menu > li {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 #top ul.menu > li a {
-  color: #eee;
+    color: #eee;
 }
 
 #top ul.menu > li + li:before {
-  content: "|\00a0";
-  padding: 0 5px;
-  color: #f8f9fa;
+    content: "|\00a0";
+    padding: 0 5px;
+    color: #f8f9fa;
 }
 
 #top ul.menu > .active {
-  color: #999;
+    color: #999;
 }
 
 #top #login-modal .modal-header {
-  background: #4fbfa8;
+    background: #4fbfa8;
 }
 
 #top #login-modal .modal-header h5 {
-  color: #fff;
+    color: #fff;
 }
 
 #top #login-modal a {
-  color: #4fbfa8;
+    color: #4fbfa8;
 }
 
 #top #login-modal p {
-  font-weight: 300;
-  margin-bottom: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
 /*=================*/
@@ -260,6 +262,12 @@ nav-link {
 /*CAROUSEL*/
 /*=================*/
 
+#slides{
+    margin-bottom: 30px;
+    border: solid 1px #fff;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 .carousel-inner img {
     width: 100%;
 }
@@ -523,26 +531,21 @@ hr.light-100{
     }
 }
 @media (max-width: 768px) {
-    .carousel-caption {
-        top: 45%;
-    }
-    .carousel-caption h1{
-        font-size: 200%;
-    }
-    .carousel-caption h3{
-        font-size: 100%;
-    }
-    .carousel-caption btn{
-        font-size: 95%;
-        padding: 10px;
-    }
+
     .display-4{
         font-size: 200%;
     }
     .social a{
         font-size: 1.5em;
     }
+    .carousel-caption h3{
+        font-size: 120%;
+    }
 
+    .carousel-caption btn{
+        font-size: 95%;
+        padding: 10px;
+    }
 
 
     /* table css */
@@ -610,19 +613,10 @@ hr.light-100{
 
 }
 @media (max-width: 576px) {
-    .carousel-caption {
-        top: 40%;
+    .carousel-caption{
+        display: none;
     }
-    .carousel-caption h1{
-        font-size: 150%;
-    }
-    .carousel-caption h3{
-        font-size: 60%;
-    }
-    .carousel-caption btn{
-        font-size: 90%;
-        padding: 5px;
-    }
+
     .carousel-indicators {
         display: none;
     }
@@ -632,7 +626,6 @@ hr.light-100{
     .social a{
         font-size: 1.3em;
     }
-
 }
 
 
@@ -790,7 +783,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 .owl-prev {
     left: -2rem !important;
-     width: 1em !important;
+    width: 1em !important;
     height: 1em !important;
 }
 
@@ -800,7 +793,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 .owl-carousel .owl-nav button.owl-next{
-     width: 2em !important;
+    width: 2em !important;
     height: 2em !important;
 }
 
