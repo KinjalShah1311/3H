@@ -60,16 +60,6 @@ a {
   color: #525252 !important;
 }
 
-.box {
-  background: #E3F3F3;
-  margin: 1em;
-  border: solid 1px #e6e6e6;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-}
-
 /*=================*/
 /*MARGIN-PADDING*/
 /*=================*/
@@ -81,14 +71,11 @@ a {
   padding-bottom: 2em;
 }
 
-/*=================*/
-/*TOP NAVIGATION*/
-/*=================*/
 /*
 *
-* ======================================================================
+* ==================
 * TOP BAR
-* ======================================================================
+* ==================
 *
 */
 #top {
@@ -200,6 +187,11 @@ nav-link {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.carousel-inner {
+  width: 100%;
+  max-height: 400px !important;
+}
+
 .carousel-inner img {
   width: 100%;
 }
@@ -212,7 +204,7 @@ nav-link {
 .carousel-caption {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-80%);
   display: grid;
 }
 
@@ -230,11 +222,14 @@ nav-link {
 /*=================*/
 /*JUMBOTRON*/
 /*=================*/
-/*
-.jumbotron{
-padding: 1em;
+.box {
+  background: #E3F3F3;
+  border: solid 1px #e6e6e6;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
-*/
+
 .padding {
   padding-bottom: 2em;
 }
@@ -434,6 +429,23 @@ hr.light-100 {
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .social a {
+    font-size: 1.5em;
+  }
+
+  .carousel-caption h3 {
+    font-size: 120%;
+  }
+
+  .carousel-caption btn {
+    font-size: 95%;
+    padding: 10px;
+  }
+
   .social a {
     font-size: 2em;
   }
@@ -454,21 +466,8 @@ hr.light-100 {
   }
 }
 @media (max-width: 768px) {
-  .display-4 {
-    font-size: 200%;
-  }
-
-  .social a {
-    font-size: 1.5em;
-  }
-
-  .carousel-caption h3 {
-    font-size: 120%;
-  }
-
-  .carousel-caption btn {
-    font-size: 95%;
-    padding: 10px;
+  .desktop-only {
+    display: none;
   }
 
   /* table css */
@@ -536,6 +535,10 @@ tr {
   /* end of table css */
 }
 @media (max-width: 576px) {
+  .desktop-only {
+    display: none;
+  }
+
   .carousel-caption {
     display: none;
   }
