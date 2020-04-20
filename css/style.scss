@@ -34,7 +34,10 @@ a {
     border-color: $themeGreenColor;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active,
+.btn-primary.hover, .btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active{
     color: $white;
     background-color: #2d7776;
     border-color: #296e6d;
@@ -51,7 +54,7 @@ a {
     border-color: #aba8a861 !important;
 }
 
-.btn-outline-secondary:hover {
+.btn-outline-secondary:hover, .btn-outline-secondary:active {
     color: $white;
     background-color: #2d7776;
     border-color: #296e6d;
@@ -641,31 +644,31 @@ Extra (xl) large devices (large desktops, 1200px and up)
     will-change: transform;
 }
 .fa-building{
-    color: #e54d26;
+    color: #269aad;
     font-size: 5em;
     margin: 0.2em;
 }
 
 .fa-briefcase{
-    color: #e54d26;
+    color: #e2ac14;
     font-size: 5em;
     margin: 0.2em;
 }
 
 .fa-network-wired{
-    color: #e54d26;
+    color: #238038c9;
     font-size: 5em;
     margin: 0.2em;
 }
 
 .fa-icons{
-    color: #e54d26;
+    color: #b32d7dc7;
     font-size: 5em;
     margin: 0.2em;
 }
 
 .fa-university{
-    color: #e54d26;
+    color: #56451ed9;
     font-size: 5em;
     margin: 0.2em;
 }
