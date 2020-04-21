@@ -1,4 +1,7 @@
 $(document).ready(function() {
+     $("#headerID").load("header.html");
+     $("#footerID").load("footer.html");
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 50,
